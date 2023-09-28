@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/vikna-task/static/css/main.acb5daf1.css",
+    "main.js": "/vikna-task/static/js/main.074bdb02.js",
+    "static/js/787.b52190a6.chunk.js": "/vikna-task/static/js/787.b52190a6.chunk.js",
+    "index.html": "/vikna-task/index.html",
+    "main.acb5daf1.css.map": "/vikna-task/static/css/main.acb5daf1.css.map",
+    "main.074bdb02.js.map": "/vikna-task/static/js/main.074bdb02.js.map",
+    "787.b52190a6.chunk.js.map": "/vikna-task/static/js/787.b52190a6.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.acb5daf1.css",
+    "static/js/main.074bdb02.js"
+  ]
+}
