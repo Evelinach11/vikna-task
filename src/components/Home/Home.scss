@@ -1,0 +1,144 @@
+.home {
+  width: 60%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 0.3fr;
+  grid-template-rows: 1fr 1fr 0.3fr;
+  gap: 20px;
+  height: 1200px;
+}
+.home-left {
+  grid-row: span 2;
+  display: flex;
+  flex-direction: column;
+}
+
+.home-rigth {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.home-rigth__card {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.card,
+.card-r {
+  width: 100%;
+  height: 100%;
+}
+
+.card-img,
+.card-img-r {
+  width: 100%;
+  height: 70%;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+.home-main__img {
+  grid-column: 1 / span 2;
+}
+
+.home-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+.home-down__card {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  grid-row: 3;
+  margin-top: 17px;
+}
+
+.card,
+.card-rigth {
+  height: 100%;
+  width: 250px;
+}
+
+.card img,
+.card-rigth img {
+  width: 100%;
+  height: 70%;
+  object-fit: cover;
+}
+
+.home-food {
+  width: 60%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  margin-top: 20px;
+}
+
+.home-food__card img {
+  width: 500px;
+  height: 300px;
+  margin: 20px;
+  border-radius: 20px;
+}
+.food-title {
+  @extend %title;
+  text-align: center;
+  width: 52%;
+  padding-top: 20px;
+}
+.food {
+  background-color: $header;
+  margin-bottom: 50px;
+  padding-bottom: 50px;
+}
+.home-down__card__new {
+  padding: 60px;
+  margin: 0 auto;
+  width: 60%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  grid-row: 3;
+  margin-top: 17px;
+}
+
+@media (max-width: 700px) {
+  .home {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    height: auto;
+  }
+
+  .card,
+  .card-rigth {
+    width: 100%;
+  }
+
+  .card img,
+  .card-rigth img {
+    height: 50%;
+  }
+  .food {
+    width: 100%;
+  }
+  .home-down__card__new {
+    width: 80%;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    height: auto;
+  }
+  .home-food__card img {
+    width: 70%;
+    height: 40%;
+  }
+  .food-title {
+    font-size: 20px;
+    width: 70%;
+  }
+}
